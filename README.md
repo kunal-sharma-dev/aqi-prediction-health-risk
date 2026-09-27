@@ -52,6 +52,8 @@ This project fetches **real air quality data** using the **Open-Meteo Air Qualit
 | Classification Accuracy | 89.10% |
 | Pearson r (PM2.5 vs AQI) | 0.979 |
 
+> **Note:** Results above are from the synthetic fallback dataset (random_seed=42) and are fully reproducible. When the Open-Meteo API is available, results will vary slightly based on live pollution data — typically R² between 0.92–0.97.
+
 ## 🩺 Health Risk Advisory System
 The model outputs a predicted AQI and maps it to a health advisory:
 - ✅ **Good (0–50)** — Air quality is satisfactory. Enjoy outdoor activities.
