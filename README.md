@@ -47,12 +47,10 @@ This project fetches **real air quality data** using the **Open-Meteo Air Qualit
 ## 📈 Results
 | Metric | Value |
 |---|---|
-| Regression RMSE | 10.62 |
+| Regression RMSE | 10.61 |
 | Regression R² | 0.966 |
-| Classification Accuracy | 89.6% |
-| Pearson r (PM2.5 vs AQI) | ~0.98 |
-
-> Results shown on synthetic dataset. Real API results will vary based on live pollution levels.
+| Classification Accuracy | 89.10% |
+| Pearson r (PM2.5 vs AQI) | 0.979 |
 
 ## 🩺 Health Risk Advisory System
 The model outputs a predicted AQI and maps it to a health advisory:
@@ -67,8 +65,11 @@ Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, SciPy, Requests, Open-
 ## 🚀 How to Run
 
 **Option 1 — Google Colab (recommended, no setup needed):**
-- Upload the `.ipynb` file to [colab.research.google.com](https://colab.research.google.com)
-- Run all cells — data fetches automatically from the API
+1. Go to [colab.research.google.com](https://colab.research.google.com)
+2. Click **File → Open notebook → GitHub tab**
+3. Paste this repo URL: `https://github.com/kunal-sharma-dev/aqi-prediction-health-risk`
+4. Click on `AQI_Prediction_Health_Risk.ipynb`
+5. Click **Runtime → Run all** — data fetches automatically, no installation needed
 
 **Option 2 — Local Jupyter:**
 ```bash
